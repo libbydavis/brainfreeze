@@ -1,0 +1,177 @@
+/* Nav Bar */
+.heading {
+	font-size: 5em;
+	font-family: 'Righteous', cursive;
+	text-align: center;
+	color: #B5A5E8;
+	padding: 0.5%;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+.headinglink{
+	text-decoration: none;
+}
+#backgroundheader {
+	width: 100%;
+	height: auto;
+	position: sticky;
+	top: 0;
+	left: 0;
+	text-align: center;
+	background-color: #C2F0FF;
+}
+.navheadings {
+	color: #B5A5E8;
+	text-decoration: none;
+	font-family: 'Righteous', cursive;
+	padding: 1.5%;
+	font-size: 1.7em;
+
+}
+.headercontent {
+	max-height: 100%;
+}
+
+/* Hamburger Nav */
+button {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+#text {
+  display: none;
+  float: none;
+  font-family: 'Righteous', cursive;
+}
+#text a{
+	color: #B5A5E8;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+#text li{
+	list-style: none;
+}
+#close {
+  display: none;
+}
+#open {
+  display: block;
+}
+button:focus {
+  outline: none;
+}
+.hamburger {
+	clear: both;
+	display: block;
+	float: left;
+	background-color: #C2F0FF;
+	padding: 3%;
+	position: fixed;
+}
+
+/* Home Page */
+.backgroundimage {
+	width: 100%;
+	clear: both;
+}
+
+/* Menu Page */
+#productsec1 {
+	width: 100%;
+	height: auto;
+	padding-top: 1%;
+}
+.sectionwrapper {
+	background-image: linear-gradient(#a693e0, #f4d9ea);
+	padding: 2%;
+}
+.sectionwrapper:after {
+  content: "";
+  display: table; 
+  clear: both; 
+}
+.icecreamimage {
+	width: 20%;
+	padding: 2%;
+}
+.icecreamRow {
+	text-align: center;
+	display: inline;
+}
+.leftCell {
+	width: 45%;
+	float: left;
+}
+
+.rightCell {
+	width: 45%;
+	float: right;
+}
+.texticeCreamLeft, .texticeCreamRight {
+	float: left;
+	max-width: 40%;
+}
+.textIcecream {
+	color: white;
+	font-family: 'Righteous', cursive;
+	font-size: 1.2em;
+	padding: 6%;
+}
+.charactermenu {
+	max-width: 18%;
+}
+#productsec2 {
+	width: 100%;
+	height: 70vh;
+	background-color: #fff8a0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+	.pages{
+		display: none;
+	}
+	.heading {
+		float: right;
+		font-size: 3em;
+		margin-right: 3%;
+		margin-top: 0;
+	}
+	#backgroundheader {
+		padding: 2%;
+	}
+	#productsec1 {
+		clear: both;
+		height: 100vh;
+	}
+	.leftCell {
+		float: none;
+		width: 95%;
+	}
+	.rightCell {
+		float: none;
+		width: 95%;
+	}
+	.texticeCreamLeft {
+		font-size: 1em;
+		max-width: 20%;
+	} 
+	.texticeCreamRight {
+		float: left;
+		font-size: 1em;
+		max-width: 20%;
+	}
+	.icecreamimage {
+	max-width: 15%;
+	padding: 2%;
+}
+	button {
+		display: block;
+	}
+	.charactermenu {
+		display: none;
+	}
+	.sectionwrapper {
+		width: 100%;
+	}
+}
