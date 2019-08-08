@@ -82,7 +82,7 @@ button:focus {
 	display: block;
 	float: left;
 	background-size: cover;
-	background-image: url("images/brainfreezeheader.jpg");
+	background-image: url("brainfreezeheader.jpg");
 	padding: 3%;
 	position: fixed;
 }
