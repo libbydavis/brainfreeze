@@ -20,7 +20,7 @@ function clickFunction() {
 }
 
 var Current = -1;
-var images = ['images/icecreamLemon.svg', 'images/icecreamStrawberry.svg', 'images/icecreamHokey.svg', 'images/icecreamChoc.svg'];
+var images = ['icecreamLemon.svg', 'icecreamStrawberry.svg', 'icecreamHokey.svg', 'icecreamChoc.svg'];
 
 
 function nextSlide() {
