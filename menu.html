@@ -17,7 +17,7 @@
 					<a class="navheadings" href="locations.html">Locations</a>
 					<a class="navheadings" href="contact.html">Contact</a>
 				</nav>
-				<button onclick="clickFunction()" style="color: #B5A5E8;" autofocus>
+				<button onclick="clickFunction()" style="color: white;" autofocus class="hamburgerbutton">
 			    <i class="fas fa-bars fa-5x" id="open"></i>
 			    <i class="fas fa-times fa-5x" id="close"></i>
 			  </button>
@@ -31,45 +31,15 @@
 			</div>
 		</header>
 		<div class="sectionwrapper">
-			<section id="productsec1">
-				<div class="icecreamRow">
-					<div class="leftCell">
-						<div class="texticeCreamLeft textIcecream">
-							<h1>Double Chocolate</h1>
-							<p>5.0</p>
-						</div>
-						<img src="icecreamChoc.svg" class="icecreamimage">
-					</div>
-					<div class="rightCell">
-						<img src="icecreamStrawberry.svg" class="icecreamimage">
-						<div class="texticeCreamRight textIcecream">
-							<h1>Strawberry</h1>
-							<p>5.0</p>
-						</div>
-					</div>
+			<section id="productsec">
+				<div class="firstslides">
+					<h1 class="headingSlides">Ice Cream</h1>
+	  				<img id="slideshow" src="images/icecreamChoc.svg" class="icecreamimage"/>
+	  				<button onclick="previousSlide()" type="button" class="buttonprevious"><i class="fas fa-arrow-circle-left fa-3x"></i></button>
+					<button onclick="nextSlide()" type="button" class="buttonnext"><i class="fas fa-arrow-circle-right fa-3x"></i></i></button>
 				</div>
-				<div class="icecreamRow">
-					<div class="leftCell">
-						<div class="texticeCreamLeft textIcecream">
-							<h1>Hokey Pokey</h1>
-							<p>5.0</p>
-						</div>
-						<img src="icecreamHokey.svg" class="icecreamimage">
-					</div>
-					<div class="rightCell">
-						<img src="icecreamLemon-01.svg" class="icecreamimage">
-						<div class="texticeCreamRight textIcecream">
-							<h1>Sour Lemon & Lime</h1>
-							<p>5.0</p>
-						</div>
-					</div>
-				</div>
+				
 			</section>
 		</div>
-		<section id="productsec2">
-			<p>Hello</p>
-		</section>
-		<section >
-		</section>
 	</body>
 </html>
