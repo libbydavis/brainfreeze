@@ -18,3 +18,30 @@ function clickFunction() {
     z.style.display = "block";
   }
 }
+
+var Current = -1;
+var images = ['images/icecreamLemon.svg', 'images/icecreamStrawberry.svg', 'images/icecreamHokey.svg', 'images/icecreamChoc.svg'];
+
+
+function nextSlide() {
+	if (Current < (images.length -1)) {
+		Current ++;
+	}
+	else {
+		Current = 0;
+	}
+	
+	document.getElementById("slideshow").src = images[Current];
+	
+}
+function previousSlide() {
+	if (Current > 0){
+		Current --;
+	}
+	else {
+		Current = (images.length -1);
+	}
+	
+	document.getElementById("slideshow").src = images[Current];
+	
+}
