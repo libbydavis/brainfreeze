@@ -93,7 +93,7 @@ button:focus {
 	width: 100%;
 }
 #section1 {
-	height: 85vh;
+	height: 95vh;
 	background-color: #fff8a0;
     	margin-bottom: 4%;
     	padding-top: 3%;
@@ -270,5 +270,5 @@ button:focus {
 	margin-top: 3%;
 }
 	#section1 {
-		height: 120vh;
+		height: 130vh;
 }
