@@ -7,9 +7,8 @@
 	<script src="actions.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/4d1a7f5f4f.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body>
+	<body id="menubackground">
 		<header id="backgroundheader">
 			<div class="headercontent">
 				<a href="index.html" class="headinglink"><h1 class="heading">brainfreeze.</h1></a>
@@ -31,16 +30,26 @@
   				</div>
 			</div>
 		</header>
-		<div class="sectionwrapper">
 			<section id="productsec">
-				<div class="firstslides">
+				<div class="slides">
+					<h1 class="headingSlides">Cones</h1>
+	  				<img id="coneslideshow" src="coneplain.svg" class="icecreamimage"/>
+	  				<button onclick="conepreviousSlide()" type="button" class="buttonprevious"><i class="fas fa-arrow-circle-left fa-3x"></i></button>
+					<button onclick="conenextSlide()" type="button" class="buttonnext"><i class="fas fa-arrow-circle-right fa-3x"></i></i></button>
+				</div>
+				<div class="slides">
 					<h1 class="headingSlides">Ice Cream</h1>
-	  				<img id="slideshow" src="icecreamChoc.svg" class="icecreamimage"/>
-	  				<button onclick="previousSlide()" type="button" class="buttonprevious"><i class="fas fa-arrow-circle-left fa-3x"></i></button>
-					<button onclick="nextSlide()" type="button" class="buttonnext"><i class="fas fa-arrow-circle-right fa-3x"></i></i></button>
+	  				<img id="iceslideshow" src="icecreamChoc.svg" class="icecreamimage"/>
+	  				<button onclick="icepreviousSlide()" type="button" class="buttonprevious"><i class="fas fa-arrow-circle-left fa-3x"></i></button>
+					<button onclick="icenextSlide()" type="button" class="buttonnext"><i class="fas fa-arrow-circle-right fa-3x"></i></i></button>
+				</div>
+				<div class="slides">
+					<h1 class="headingSlides">Toppings</h1>
+	  				<img id="topslideshow" src="sprinkles.svg" class="icecreamimage"/>
+	  				<button onclick="toppreviousSlide()" type="button" class="buttonprevious"><i class="fas fa-arrow-circle-left fa-3x"></i></button>
+					<button onclick="topnextSlide()" type="button" class="buttonnext"><i class="fas fa-arrow-circle-right fa-3x"></i></i></button>
 				</div>
 				
 			</section>
-		</div>
 	</body>
 </html>
