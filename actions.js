@@ -19,29 +19,87 @@ function clickFunction() {
   }
 }
 
+
+var Currentcone = -1;
+var coneimages = ['conedrizzle.svg', 'conechoc.svg', 'conedrizzlecara.svg', 'conechocdrizzle.svg', 'coneplain.svg'];
+
+
+function conenextSlide() {
+	if (Currentcone < (coneimages.length -1)) {
+		Currentcone ++;
+	}
+	else {
+		Currentcone = 0;
+	}
+	
+	document.getElementById("coneslideshow").src = coneimages[Currentcone];
+	
+}
+function conepreviousSlide() {
+	if (Currentcone > 0){
+		Currentcone --;
+	}
+	else {
+		Currentcone = (coneimages.length -1);
+	}
+	
+	document.getElementById("coneslideshow").src = coneimages[Currentcone];
+	
+}
+
+
 var Current = -1;
-var images = ['icecreamLemon.svg', 'icecreamStrawberry.svg', 'icecreamHokey.svg', 'icecreamChoc.svg'];
+var iceimages = ['icecreamLemon.svg', 'icecreamStrawberry.svg', 'icecreamHokey.svg', 'icecreamChoc.svg'];
 
 
-function nextSlide() {
-	if (Current < (images.length -1)) {
+function icenextSlide() {
+	if (Current < (iceimages.length -1)) {
 		Current ++;
 	}
 	else {
 		Current = 0;
 	}
 	
-	document.getElementById("slideshow").src = images[Current];
+	document.getElementById("iceslideshow").src = iceimages[Current];
 	
 }
-function previousSlide() {
+function icepreviousSlide() {
 	if (Current > 0){
 		Current --;
 	}
 	else {
-		Current = (images.length -1);
+		Current = (iceimages.length -1);
 	}
 	
-	document.getElementById("slideshow").src = images[Current];
+	document.getElementById("iceslideshow").src = iceimages[Current];
+	
+}
+
+
+
+var Currenttop = -1;
+var topimages = ['cherries.svg', 'flake.svg', 'sprinkles.svg'];
+
+
+function topnextSlide() {
+	if (Currenttop < (topimages.length -1)) {
+		Currenttop ++;
+	}
+	else {
+		Currenttop = 0;
+	}
+	
+	document.getElementById("topslideshow").src = topimages[Currenttop];
+	
+}
+function toppreviousSlide() {
+	if (Currenttop > 0){
+		Currenttop --;
+	}
+	else {
+		Currenttop = (topimages.length -1);
+	}
+	
+	document.getElementById("topslideshow").src = topimages[Currenttop];
 	
 }
