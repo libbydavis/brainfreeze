@@ -30,7 +30,7 @@ html, body {
 	top: 0;
 	left: 0;
 	text-align: center;
-	background-image: url("images/brainfreezeheader.jpg");
+	background-image: url("brainfreezeheader.jpg");
 	background-size: cover;
 	padding-bottom: 1%;
 }
@@ -83,7 +83,7 @@ button:focus {
 	display: block;
 	float: left;
 	background-size: cover;
-	background-image: url("images/brainfreezeheader.jpg");
+	background-image: url("brainfreezeheader.jpg");
 	padding: 3%;
 	position: fixed;
 }
@@ -105,7 +105,7 @@ button:focus {
 .quotediv {
 	width: 60%;
 	float: left;
-	/*background-image: url("images/panda-01.svg");
+	/*background-image: url("panda-01.svg");
 	background-size: cover; */
 	background-color: #fff8a0;
 	padding-bottom: 3%;
