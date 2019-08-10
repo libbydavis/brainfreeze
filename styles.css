@@ -129,7 +129,7 @@ button:focus {
 	float: right;
 }
 .vendingmachinesize {
-	height: 50%;
+	height: 70vh;
 }
 .clear {
 	clear: both;
@@ -250,6 +250,8 @@ button:focus {
 		float: left;
 		width: 100%;
 	}
+	.vendingmachine {
+		height: 100vh;
 	.quotediv {
 		width: 100%;
 	}
@@ -267,6 +269,7 @@ button:focus {
 	}
 	.howtosec {
 		width: 45%;
+		height: 100%;
 	}
 	#section2 {
 	display: inline-block;
