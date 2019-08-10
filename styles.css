@@ -143,6 +143,7 @@ button:focus {
 	height: auto;
 	vertical-align: top;
 	padding-bottom: 1%;
+	border-radius: 50%;
 }
 .howtotitle {
 	font-family: 'Righteous', cursive;
