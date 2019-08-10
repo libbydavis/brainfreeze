@@ -249,8 +249,9 @@ button:focus {
 		float: left;
 		width: 100%;
 	}
-	.vendingmachine {
-		height: 100vh;
+	.vendingmachinesize {
+		height: 100vh; 
+	}
 	.quotediv {
 		width: 100%;
 	}
@@ -279,7 +280,5 @@ button:focus {
 		background-image: linear-gradient(#a693e0, #f4d9ea);
 		background-size: cover;
 }
-	#productsec {
-		background-image: none;
-		}
+
 }
