@@ -156,14 +156,12 @@ button:focus {
 
 /* Menu Page */
 #menubackground {
-	background-image: linear-gradient(#a693e0, #f4d9ea);
-	background-size: cover;
 }
 #productsec {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	padding: 1%;
-	background-image: none;
+	background-image: linear-gradient(#a693e0, #f4d9ea);
 }
 .slides {
 	width: 30%;
