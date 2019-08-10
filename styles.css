@@ -97,6 +97,7 @@ button:focus {
 	background-color: #fff8a0;
     	margin-bottom: 4%;
     	padding-top: 3%;
+	padding-bottom: 3%;
 }
 #section2 {
 	display: inline-flex;
