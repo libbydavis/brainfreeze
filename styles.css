@@ -289,8 +289,6 @@ button:focus {
     }
 }
 
-
-}
 @media only screen and (max-width: 1000px) and (min-width: 900px) {
     .slides {
         width: 45%;
