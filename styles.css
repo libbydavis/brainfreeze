@@ -6,15 +6,16 @@
 html, body {
 			margin: 0;
 			padding: 0;
+			font-family: 'Righteous', cursive;
+
 		}
 /* Nav Bar */
 .heading {
 	font-size: 6em;
-	font-family: 'Righteous', cursive;
 	text-align: center;
 	color: white;
 	padding: 0.5%;
-	margin-top: 0.2em;
+	margin-top: 0;
 	margin-bottom: 0.2em;
 }
 .heading:hover {
@@ -38,7 +39,6 @@ html, body {
 .navheadings {
 	color: white;
 	text-decoration: none;
-	font-family: 'Righteous', cursive;
 	padding: 1.5%;
 	font-size: 1.7em;
 
@@ -60,7 +60,6 @@ html, body {
 #text {
   display: none;
   float: none;
-  font-family: 'Righteous', cursive;
 }
 #text a{
 	color: white;
@@ -92,20 +91,49 @@ button:focus {
 	position: fixed;
 }
 
+/* Headings */
+.headingontop {
+	position: fixed;
+	left: 38%;
+	top: 40%;
+	transform: rotate(90deg);
+}
+.headingontopsmall {
+	display: none;
+}
+.pageheading {
+	font-size: 2.8em;
+	color: #fa03eb;
+	background-color: #fff8a0;
+	padding: 8%;
+}
+.headingontoppage {
+	display: flex;
+	justify-content: center;
+	margin: 1%;
+}
+.headingontoppage .pageheading{
+	padding: 1%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 0;
+}
+
 /* Home Page */
 #section1, #section2 {
 	width: 100%;
+	background-attachment: fixed;
 }
 #section1 {
 	height: auto;
 	background-color: #fff8a0;
-    margin-bottom: 4%;
     padding-top: 3%;
 	padding-bottom: 3%;
 }
 #section2 {
 	display: inline-flex;
-    max-height: 10vh;
+    height: 83vh;
+    background-color: #f4d9ea;
 }
 .backgroundimage {
 	width: 100%;
@@ -114,13 +142,10 @@ button:focus {
 .quotediv {
 	width: 60%;
 	float: left;
-	/*background-image: url("panda-01.svg");
-	background-size: cover; */
 	padding-bottom: 3%;
 	margin-bottom: 3%;
 }
 .quote {
-	font-family: 'Righteous', cursive;
 	color: #fa03eb;
 	font-size: 2.5em;
 	max-width: 70%;
@@ -151,7 +176,6 @@ button:focus {
 	border-radius: 50%;
 }
 .howtotitle {
-	font-family: 'Righteous', cursive;
 	font-size: 1.5em;
 	vertical-align: top;
 	color: #fa03eb;
@@ -163,14 +187,14 @@ button:focus {
 /* Menu Page */
 
 #menubackground {
-    background-image: linear-gradient(#a693e0, #f4d9ea);
+    background-image: linear-gradient(to right, #a693e0, #f4d9ea);
     background-size: cover;
 }
 #productsec {
-	width: 100%;
+	width: 98%;
 	height: 100%;
 	padding: 1%;
-    background-image: none !important;
+	text-align: center;
 }
 .slides {
 	width: 30%;
@@ -202,13 +226,58 @@ button:focus {
 	max-width: 50%;
 }
 .headingSlides{
-	font-family: 'Righteous', cursive;
 	color: white;
 	font-size: 2em;
 
 }
 #iceslideshow, #coneslideshow, #topslideshow {
 	height: 35vh;
+}
+.productcaption {
+	color: white;
+	font-size: 1.3em;
+}
+
+/*Locations Page */
+.addresses {
+	float: left;
+	width: 42%;
+	color: #8a03fa;
+	background-color: #aff0ff;
+	padding: 2%;
+	height: 100vh;
+}
+.addresses a{
+	text-decoration: none;
+	color: #8a03fa;
+}
+.addresses a:hover {
+	color: #fa03eb;
+}
+.map {
+	float: right;
+	width: 50%;
+	background-color: #a693e0;
+	text-align: center;
+	padding: 2%;
+	height: 100vh;
+}
+.singleaddress {
+	padding-top: 1%;
+	padding-bottom: 2%;
+	padding-left: 3%;
+}
+.singleaddress:hover {
+	margin-left: 2%;
+}
+.singleaddress h3{
+	font-size: 1.5em;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+.singleaddress p{
+	margin-top: 0;
+	font-family: 'Lexend Exa', sans-serif;
 }
 
 /* Media Queries */
@@ -276,16 +345,22 @@ button:focus {
     }
 
     .howtosec {
-        width: 90%;
+        width: 60%;
         margin-top: 7%;
         margin-bottom: 7%;
-        margin-left: 8%;
+        margin-left: 18%;
     }
 
     #section2 {
         display: inline-block;
-        margin-top: 3%;
         margin-bottom: 3%;
+        height: auto;
+        padding-bottom: 3%;
+    }
+    .addresses, .map {
+    	float: none;
+    	width: 100%;
+    	height: 90vh;
     }
 }
 
@@ -293,4 +368,16 @@ button:focus {
     .slides {
         width: 45%;
     }
+}
+@media only screen and (max-width: 1430px){
+    .headingontop {
+	display: none;
+}
+	.headingontopsmall {
+		display: block;
+	}
+	.pageheading {
+		padding: 3%;
+		margin: 0;
+	}
 }
