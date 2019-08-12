@@ -380,4 +380,8 @@ button:focus {
 		padding: 3%;
 		margin: 0;
 	}
+@media only screen and (max-width: 900px) and (min-width: 580px) {
+	.addresses {
+	height: 110vh;
+	}
 }
