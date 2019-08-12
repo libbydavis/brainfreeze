@@ -22,6 +22,7 @@ function clickFunction() {
 
 var Currentcone = -1;
 var coneimages = ['conedrizzle.svg', 'conechoc.svg', 'conedrizzlecara.svg', 'conechocdrizzle.svg', 'coneplain.svg'];
+var conenames = ["Chocolate Drizzle Cone", "Chocolate Cone", "Caramel Drizzle Cone", "Double Chocolate Drizzle Cone", "Vanilla Cone"]
 
 
 function conenextSlide() {
@@ -33,6 +34,7 @@ function conenextSlide() {
 	}
 	
 	document.getElementById("coneslideshow").src = coneimages[Currentcone];
+	document.getElementById("conecaption").innerHTML = conenames[Currentcone];
 	
 }
 function conepreviousSlide() {
@@ -44,12 +46,14 @@ function conepreviousSlide() {
 	}
 	
 	document.getElementById("coneslideshow").src = coneimages[Currentcone];
+	document.getElementById("conecaption").innerHTML = conenames[Currentcone];
 	
 }
 
 
 var Current = -1;
 var iceimages = ['icecreamLemon.svg', 'icecreamStrawberry.svg', 'icecreamHokey.svg', 'icecreamChoc.svg'];
+var icenames = ["Sour Lemon Lime", "Strawberry", "Hokey Pokey", "Double Chocolate"]
 
 
 function icenextSlide() {
@@ -61,6 +65,7 @@ function icenextSlide() {
 	}
 	
 	document.getElementById("iceslideshow").src = iceimages[Current];
+	document.getElementById("icecaption").innerHTML = icenames[Current];
 	
 }
 function icepreviousSlide() {
@@ -72,6 +77,7 @@ function icepreviousSlide() {
 	}
 	
 	document.getElementById("iceslideshow").src = iceimages[Current];
+	document.getElementById("icecaption").innerHTML = icenames[Current];
 	
 }
 
@@ -79,6 +85,7 @@ function icepreviousSlide() {
 
 var Currenttop = -1;
 var topimages = ['cherries.svg', 'flake.svg', 'sprinkles.svg'];
+var topnames = ["Cherries", "Flake", "Sprinkles"]
 
 
 function topnextSlide() {
@@ -90,6 +97,7 @@ function topnextSlide() {
 	}
 	
 	document.getElementById("topslideshow").src = topimages[Currenttop];
+	document.getElementById("topcaption").innerHTML = topnames[Currenttop];
 	
 }
 function toppreviousSlide() {
@@ -101,5 +109,6 @@ function toppreviousSlide() {
 	}
 	
 	document.getElementById("topslideshow").src = topimages[Currenttop];
+	document.getElementById("topcaption").innerHTML = topnames[Currenttop];
 	
 }
