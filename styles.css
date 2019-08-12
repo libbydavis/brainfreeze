@@ -134,7 +134,7 @@ button:focus {
 }
 #section2 {
 	display: inline-flex;
-    height: 83vh;
+    height: 95vh;
     background-color: #f4d9ea;
 }
 .backgroundimage {
@@ -357,7 +357,7 @@ button:focus {
         display: inline-block;
         margin-bottom: 3%;
         height: auto;
-        padding-bottom: 3%;
+        padding-bottom: 20%;
     }
     .addresses, .map {
     	float: none;
