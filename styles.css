@@ -94,32 +94,25 @@ button:focus {
 }
 
 /* Headings */
-.headingontop {
-	position: fixed;
-	left: 38%;
-	top: 40%;
-	transform: rotate(90deg);
-}
 .headingontopsmall {
-	display: none;
+	display: block;
+
 }
 .pageheading {
 	font-size: 2.8em;
 	color: #fa03eb;
 	background-color: #fff8a0;
-	padding: 8%;
+	padding: 1%;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin: 0;
 }
 .headingontoppage {
 	display: flex;
 	justify-content: center;
 	margin: 1%;
 }
-.headingontoppage .pageheading{
-	padding: 1%;
-	padding-left: 5%;
-	padding-right: 5%;
-	margin: 0;
-}
+
 
 /* Home Page */
 #section1, #section2 {
@@ -282,6 +275,72 @@ button:focus {
 	font-family: 'Lexend Exa', sans-serif;
 }
 
+/* Contact Page */
+
+.selectionscreen {
+	background-color: black;
+	width: 94%;
+	height: 4vh;
+	color: blue;
+	padding: 1%;
+	margin-bottom: 5%;
+	margin-left: 3%;
+	overflow: hidden;
+	position: relative;
+	z-index: -1;
+}
+.selectionscreen p{
+	font-size: 1.5em;
+	font-family:'Lexend Exa', sans-serif;
+	display: inline-block;
+	position: absolute;
+    margin: 0;
+	animation: scrolltoside 8s infinite linear;
+	text-align: none;
+}
+@-webkit-keyframes scrolltoside{
+	0%   { transform: translate(140%); }
+    100% { transform: translate(-230%); }
+}
+.sociallogos {
+	width: 6vw;
+	margin: 1%;
+	padding: 1%;
+}
+.socialbuttons {
+	border-radius: 50%;
+	background-color: #f4d9ea;
+	border: none;
+	display: inline-block;
+	margin: 0.5%;
+}
+.leftcontact {
+	float: left;
+	text-align: center;
+}
+.leftcontact, .rightcontact {
+	margin-top: 5%;
+	width: 50%;
+}
+.rightcontact {
+	float: right;
+}
+form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+legend {
+	font-size: 2em;
+}
+form input {
+	margin: 1%;
+	padding: 1%;
+}
+textarea {
+	margin-top: 5%;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 900px) {
     .pages {
@@ -297,6 +356,7 @@ button:focus {
 
     #backgroundheader {
         padding: 2%;
+        max-width: 96%;
     }
 
     #productsec1 {
@@ -371,17 +431,6 @@ button:focus {
         width: 45%;
     }
 }
-@media only screen and (max-width: 1430px){
-    .headingontop {
-	display: none;
-}
-	.headingontopsmall {
-		display: block;
-	}
-	.pageheading {
-		padding: 3%;
-		margin: 0;
-	}
 @media only screen and (max-width: 900px) and (min-width: 580px) {
 	.addresses {
 	height: 110vh;
