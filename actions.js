@@ -112,3 +112,16 @@ function toppreviousSlide() {
 	document.getElementById("topcaption").innerHTML = topnames[Currenttop];
 	
 }
+var screenshots = {"Instagram" : "instagram.png", "Twitter" : "twitter.png", "Facebook" : "facebook.png"}
+var links = {"Instagram" : "https://www.instagram.com/", "Twitter" : "https://twitter.com/", "Facebook": "https://www.facebook.com/"}
+
+function socialbutton(media) {
+	document.getElementById("socialpic").src = screenshots[media];
+	var link = document.getElementById("sociallink");
+	link.setAttribute("href", links[media]);
+	document.getElementById("placeholdersocialtext").innerHTML = "Click Picture To Go To Social Media";
+}
+
+function alert() {
+	alert("Thanks for submitting! We\'ll be in contact soon :D");
+}
