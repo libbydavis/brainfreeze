@@ -89,8 +89,12 @@ button:focus {
 	float: left;
 	background-size: cover;
 	background-image: url("brainfreezeheader.jpg");
-	padding: 3%;
+	padding: 2%;
 	position: fixed;
+}
+.hamburger ul li {
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 /* Headings */
@@ -112,10 +116,31 @@ button:focus {
 	justify-content: center;
 	margin: 1%;
 }
-
+ /* Footer */
+ .footer a{
+	text-decoration: none;
+	color: #8a03fa;
+	margin-left: 2%;
+	margin-right: 2%;
+ }
+ .footer a:hover {
+ 	color: #fa03eb;
+ }
+ .footer {
+ 	color: #fa03eb;
+ 	text-align: center;
+ 	clear: both;
+ 	margin-top: 10%;
+ 	padding-top: 3%;
+ 	padding-bottom: 3%;
+ 	background-color: #fff8a0;
+ 	max-height: 5vh;
+ 	position: static;
+ 	bottom: 0;
+ }
 
 /* Home Page */
-#section1, #section2 {
+#section1, #section2, #section3 {
 	width: 100%;
 	background-attachment: fixed;
 }
@@ -129,6 +154,11 @@ button:focus {
 	display: inline-flex;
     height: 95vh;
     background-color: #f4d9ea;
+}
+#section3 {
+	display: flex-block;
+	align-content: center;
+	max-width: 100%;
 }
 .backgroundimage {
 	width: 100%;
@@ -178,6 +208,12 @@ button:focus {
 .howtoimg {
 	max-height: 90%;
 }
+.gridimage {
+	width: 32%;
+	vertical-align: top;
+	text-align: center;
+	margin: 0.5%;
+}
 
 /* Menu Page */
 
@@ -207,6 +243,7 @@ button:focus {
 .buttonnext:hover, .buttonprevious:hover {
 	color: #e903ed;
 	position: relative;
+	cursor: pointer;
 }
 .buttonprevious {
 	float: left;
@@ -257,6 +294,10 @@ button:focus {
 	padding: 2%;
 	height: 100vh;
 }
+.map iframe {
+	width: 90%;
+	height: 70%;
+}
 .singleaddress {
 	padding-top: 1%;
 	padding-bottom: 2%;
@@ -277,50 +318,73 @@ button:focus {
 
 /* Contact Page */
 
+#backgroundcontact {
+	background-color: black;
+}
 .selectionscreen {
 	background-color: black;
 	width: 94%;
 	height: 4vh;
-	color: blue;
+	color: white;
 	padding: 1%;
 	margin-bottom: 5%;
-	margin-left: 3%;
 	overflow: hidden;
 	position: relative;
 	z-index: -1;
+	white-space: nowrap;
 }
 .selectionscreen p{
-	font-size: 1.5em;
-	font-family:'Lexend Exa', sans-serif;
+	font-size: 1.8em;
+	font-family: 'VT323', monospace;
 	display: inline-block;
 	position: absolute;
     margin: 0;
-	animation: scrolltoside 8s infinite linear;
+	animation: scrolltoside 7s infinite linear;
 	text-align: none;
 }
 @-webkit-keyframes scrolltoside{
 	0%   { transform: translate(140%); }
-    100% { transform: translate(-230%); }
+    100% { transform: translate(-240%); }
 }
 .sociallogos {
-	width: 6vw;
+	width: 8vw;
 	margin: 1%;
 	padding: 1%;
 }
 .socialbuttons {
-	border-radius: 50%;
-	background-color: #f4d9ea;
+	background-color: transparent;
 	border: none;
 	display: inline-block;
 	margin: 0.5%;
 }
+.socialbuttons:hover {
+	cursor: pointer;
+}
+.socialimagebox {
+	border: solid;
+	width: 40vw;
+	margin: auto;
+	height: 40vh;
+}
+.socialimagebox img{
+	height: 40vh;
+	max-width: 100%;
+	object-fit: cover;
+}
+#placeholdersocialtext {
+	color: white;
+	z-index: 1;
+	font-family: 'VT323', monospace;
+	font-size: 1.5em;
+}
 .leftcontact {
 	float: left;
-	text-align: center;
+	margin: 1%;
 }
 .leftcontact, .rightcontact {
 	margin-top: 5%;
-	width: 50%;
+	text-align: center;
+	width: 48%;
 }
 .rightcontact {
 	float: right;
@@ -329,16 +393,38 @@ form {
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
+	padding: 2%;
+	color: white;
+	font-family: 'VT323', monospace;
 }
 legend {
-	font-size: 2em;
+	font-size: 2.5em;
+	margin-bottom: 2%;
+}
+form h3{
+	font-size: 1.8em;
 }
 form input {
 	margin: 1%;
-	padding: 1%;
+	padding: 3%;
+	border: none;
 }
 textarea {
 	margin-top: 5%;
+	height: 15vh;
+	width: 60%;
+	border: none;
+}
+form button{
+	background-color: transparent;
+	color: white;
+	border: solid white;
+	border-radius: 5px;
+	padding: 1.5%;
+	font-size: 1.3em;
+	margin-top: 2%;
+	font-weight: bold;
+	font-family: 'VT323', monospace;
 }
 
 /* Media Queries */
@@ -387,7 +473,7 @@ textarea {
     }
 
     .quotediv {
-        width: 100%;
+        width: 95%;
         margin-left: 5%;
     }
 
@@ -421,9 +507,31 @@ textarea {
     }
     .addresses, .map {
     	float: none;
-    	width: 100%;
+    	width: 96%;
     	height: 90vh;
     }
+    @-webkit-keyframes scrolltosidesmall{
+	0%   { transform: translate(180%); }
+    100% { transform: translate(-260%); }
+	}
+    .selectionscreen p{
+    	animation: scrolltosidesmall 10s infinite linear;
+    }
+    .leftcontact, .rightcontact {
+	width: 98%;
+	float: none;
+	}
+	.rightcontact {
+		margin-top: 5%;
+		margin-bottom: 5%;
+		text-align: center;
+	}
+	.sociallogos {
+	width: 12vw;
+}
+	.socialimagebox {
+		width: 80vw;
+	}
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 900px) {
