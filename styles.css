@@ -42,7 +42,7 @@ html, body {
 	color: white;
 	text-decoration: none;
 	padding: 1.5%;
-	font-size: 1.7em;
+	font-size: 1.5em;
 
 }
 .navheadings:hover {
@@ -122,24 +122,32 @@ button:focus {
 	color: #8a03fa;
 	margin-left: 2%;
 	margin-right: 2%;
+	cursor: pointer;
  }
  .footer a:hover {
  	color: #fa03eb;
+ }
+ .footer ul li{
+ 	display: inline;
+ 	list-style: none;
+ 	padding: 1%;
  }
  .footer {
  	color: #fa03eb;
  	text-align: center;
  	clear: both;
- 	margin-top: 10%;
- 	padding-top: 3%;
- 	padding-bottom: 3%;
+ 	padding-top: 1%;
+ 	padding-bottom: 1%;
  	background-color: #fff8a0;
- 	max-height: 5vh;
+ 	height: 10vh;
  	position: static;
  	bottom: 0;
  }
 
 /* Home Page */
+#indexbackground {
+	background-color: #a693e0;
+}
 #section1, #section2, #section3 {
 	width: 100%;
 	background-attachment: fixed;
@@ -155,10 +163,16 @@ button:focus {
     height: 95vh;
     background-color: #f4d9ea;
 }
+.sectionlink {
+	text-decoration: none;
+}
 #section3 {
-	display: flex-block;
-	align-content: center;
-	max-width: 100%;
+	width: 99%;
+	margin: 1%;
+}
+#section3 a{
+	display: flex;
+	flex-wrap: wrap;
 }
 .backgroundimage {
 	width: 100%;
@@ -211,8 +225,8 @@ button:focus {
 .gridimage {
 	width: 32%;
 	vertical-align: top;
-	text-align: center;
 	margin: 0.5%;
+	object-fit: cover;
 }
 
 /* Menu Page */
@@ -226,6 +240,7 @@ button:focus {
 	height: 100%;
 	padding: 1%;
 	text-align: center;
+	margin-bottom: 10%;
 }
 .slides {
 	width: 30%;
@@ -321,6 +336,10 @@ button:focus {
 #backgroundcontact {
 	background-color: black;
 }
+.contactcontent {
+	width: 100%;
+	margin-bottom: 20%;
+}
 .selectionscreen {
 	background-color: black;
 	width: 94%;
@@ -340,11 +359,10 @@ button:focus {
 	position: absolute;
     margin: 0;
 	animation: scrolltoside 7s infinite linear;
-	text-align: none;
 }
 @-webkit-keyframes scrolltoside{
-	0%   { transform: translate(140%); }
-    100% { transform: translate(-240%); }
+	0%   { transform: translate(200%); }
+    100% { transform: translate(-270%); }
 }
 .sociallogos {
 	width: 8vw;
@@ -369,7 +387,7 @@ button:focus {
 .socialimagebox img{
 	height: 40vh;
 	max-width: 100%;
-	object-fit: cover;
+	object-fit: contain;
 }
 #placeholdersocialtext {
 	color: white;
@@ -400,6 +418,12 @@ form {
 legend {
 	font-size: 2.5em;
 	margin-bottom: 2%;
+	animation: flashing 1s infinite;
+}
+@-webkit-keyframes flashing {
+	0% {opacity: 1;}
+	50%{opacity: 0}
+	100%{opacity: 1;}
 }
 form h3{
 	font-size: 1.8em;
@@ -427,6 +451,7 @@ form button{
 	font-family: 'VT323', monospace;
 }
 
+
 /* Media Queries */
 @media only screen and (max-width: 900px) {
     .pages {
@@ -443,11 +468,6 @@ form button{
     #backgroundheader {
         padding: 2%;
         max-width: 96%;
-    }
-
-    #productsec1 {
-        clear: both;
-        height: 100vh;
     }
 
     .hamburgerbutton {
@@ -515,7 +535,7 @@ form button{
     100% { transform: translate(-260%); }
 	}
     .selectionscreen p{
-    	animation: scrolltosidesmall 10s infinite linear;
+    	animation: scrolltosidesmall 8s infinite linear;
     }
     .leftcontact, .rightcontact {
 	width: 98%;
@@ -528,10 +548,19 @@ form button{
 	}
 	.sociallogos {
 	width: 12vw;
-}
+	}
 	.socialimagebox {
 		width: 80vw;
 	}
+	.footer ul li{
+ 	display: block;
+ 	}
+ 	.footer {
+ 		height: 28vh;
+ 	}
+ 	.gridimage {
+ 		width: 48.5%;
+ 	}
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 900px) {
