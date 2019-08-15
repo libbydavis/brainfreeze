@@ -41,6 +41,9 @@ function conepreviousSlide() {
 	if (Currentcone > 0){
 		Currentcone --;
 	}
+	else if (Currentcone === -1) {
+		Currentcone = (coneimages.length -2);
+	}
 	else {
 		Currentcone = (coneimages.length -1);
 	}
@@ -71,6 +74,9 @@ function icenextSlide() {
 function icepreviousSlide() {
 	if (Current > 0){
 		Current --;
+	}
+		else if (Current === -1) {
+		Current = (iceimages.length -2);
 	}
 	else {
 		Current = (iceimages.length -1);
@@ -104,6 +110,9 @@ function toppreviousSlide() {
 	if (Currenttop > 0){
 		Currenttop --;
 	}
+		else if (Currenttop === -1) {
+		Currenttop = (topimages.length -2);
+	}
 	else {
 		Currenttop = (topimages.length -1);
 	}
@@ -122,6 +131,8 @@ function socialbutton(media) {
 	document.getElementById("placeholdersocialtext").innerHTML = "Click Picture To Go To Social Media";
 }
 
-function alert() {
+function popupsubmit() {
 	alert("Thanks for submitting! We\'ll be in contact soon :D");
 }
+
+
