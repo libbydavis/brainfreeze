@@ -34,7 +34,7 @@ html, body {
 	left: 0;
     right: 0;
 	text-align: center;
-	background-image: url("../images/brainfreezeheader.jpg");
+	background-image: url("brainfreezeheader.jpg");
 	background-size: cover;
 	padding-bottom: 1%;
 }
@@ -91,7 +91,7 @@ button:focus {
 	display: block;
 	float: left;
 	background-size: cover;
-	background-image: url("../images/brainfreezeheader.jpg");
+	background-image: url("brainfreezeheader.jpg");
 	padding: 2%;
 	position: fixed;
 }
