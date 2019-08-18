@@ -21,7 +21,7 @@ function clickFunction() {
 
 
 var Currentcone = -1;
-var coneimages = ['images/conedrizzle.svg', 'images/conechoc.svg', 'images/conedrizzlecara.svg', 'images/conechocdrizzle.svg', 'images/coneplain.svg'];
+var coneimages = ['conedrizzle.svg', 'conechoc.svg', 'conedrizzlecara.svg', 'conechocdrizzle.svg', 'coneplain.svg'];
 var conenames = ["Chocolate Drizzle Cone", "Chocolate Cone", "Caramel Drizzle Cone", "Double Chocolate Drizzle Cone", "Vanilla Cone"]
 
 
@@ -55,7 +55,7 @@ function conepreviousSlide() {
 
 
 var Current = -1;
-var iceimages = ['images/icecreamLemon.svg', 'images/icecreamStrawberry.svg', 'images/icecreamHokey.svg', 'images/icecreamChoc.svg'];
+var iceimages = ['icecreamLemon.svg', 'icecreamStrawberry.svg', 'icecreamHokey.svg', 'icecreamChoc.svg'];
 var icenames = ["Sour Lemon Lime", "Strawberry", "Hokey Pokey", "Double Chocolate"]
 
 
@@ -90,7 +90,7 @@ function icepreviousSlide() {
 
 
 var Currenttop = -1;
-var topimages = ['images/cherries.svg', 'images/flake.svg', 'images/sprinkles.svg'];
+var topimages = ['cherries.svg', 'flake.svg', 'sprinkles.svg'];
 var topnames = ["Cherries", "Flake", "Sprinkles"]
 
 
@@ -121,7 +121,7 @@ function toppreviousSlide() {
 	document.getElementById("topcaption").innerHTML = topnames[Currenttop];
 
 }
-var screenshots = {"Instagram" : "images/instagram.png", "Twitter" : "images/twitter.png", "Facebook" : "images/facebook.png"}
+var screenshots = {"Instagram" : "instagram.png", "Twitter" : "twitter.png", "Facebook" : "facebook.png"}
 var links = {"Instagram" : "https://www.instagram.com/", "Twitter" : "https://twitter.com/", "Facebook": "https://www.facebook.com/"}
 
 function socialbutton(media) {
